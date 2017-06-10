@@ -11,8 +11,15 @@ class FizzBuzz
 
 		return 'fizz';
 
-		}
-		return $number;
+	}
+
+	if ($number % 5 == 0){
+
+		return 'buzz';
+
+	}
+
+	return $number;
 	}
 
 	function MultipleOfThree($number){
