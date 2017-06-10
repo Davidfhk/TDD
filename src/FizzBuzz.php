@@ -13,7 +13,7 @@ class FizzBuzz
 
 	}
 
-	if ($number % 5 == 0){
+	if ($this->MultipleOfFive($number)){
 
 		return 'buzz';
 
@@ -24,6 +24,10 @@ class FizzBuzz
 
 	function MultipleOfThree($number){
 		return $number % 3 == 0;
+	}
+
+	function MultipleOfFive($number){
+		return $number % 5 == 0;
 	}
 
 }
