@@ -40,4 +40,15 @@ class FizzBuzzTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('buzz', $result);
     }
 
+    /**
+     * @test
+     *
+     */
+    public function returnFizzBuzz()
+    {
+        $kata = new FizzBuzz();
+        $result = $kata->number(15);
+        $this->assertEquals('fizzbuzz', $result);
+    }
+
 }
