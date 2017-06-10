@@ -7,17 +7,21 @@ class FizzBuzz
 
 	function Number($number){
 
-	if ($this->MultipleOfThree($number)) {
+		if ($this->MultipleOfThree($number) && $this->MultipleOfFive($number)) {
+				return 'fizzbuzz';
+		}
 
-		return 'fizz';
+		if ($this->MultipleOfThree($number)) {
 
-	}
+			return 'fizz';
 
-	if ($this->MultipleOfFive($number)){
+		}
 
-		return 'buzz';
+		if ($this->MultipleOfFive($number)){
 
-	}
+			return 'buzz';
+
+		}
 
 	return $number;
 	}
