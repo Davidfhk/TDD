@@ -6,6 +6,9 @@ use Kata\FizzBuzz;
 
 class FizzBuzzTest extends \PHPUnit_Framework_TestCase
 {
+  const FIZZ_NUMBER = 4;
+  const BUZZ_NUMBER = 6;
+  const FIZZBUZZ_NUMBER = 12;
 
 	  /** 
      * @test
@@ -14,7 +17,7 @@ class FizzBuzzTest extends \PHPUnit_Framework_TestCase
     public function returnNumber()
     {
         $kata = new FizzBuzz();
-       	$result = $kata->number(1);
+       	$result = $kata->Number(1);
       	$this->assertEquals(1, $result);
     }
 
@@ -25,7 +28,7 @@ class FizzBuzzTest extends \PHPUnit_Framework_TestCase
     public function returnFizz()
     {
         $kata = new FizzBuzz();
-        $result = $kata->number(3);
+        $result = $kata->Number(self::FIZZ_NUMBER);
         $this->assertEquals('fizz', $result);
     }
 
@@ -36,7 +39,7 @@ class FizzBuzzTest extends \PHPUnit_Framework_TestCase
     public function returnBuzz()
     {
         $kata = new FizzBuzz();
-        $result = $kata->number(5);
+        $result = $kata->Number(self::BUZZ_NUMBER);
         $this->assertEquals('buzz', $result);
     }
 
@@ -47,7 +50,7 @@ class FizzBuzzTest extends \PHPUnit_Framework_TestCase
     public function returnFizzBuzz()
     {
         $kata = new FizzBuzz();
-        $result = $kata->number(15);
+        $result = $kata->Number(self::FIZZBUZZ_NUMBER);
         $this->assertEquals('fizzbuzz', $result);
     }
 
