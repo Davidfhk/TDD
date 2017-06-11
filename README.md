@@ -7,8 +7,10 @@ Prácticando TDD con el ejercicio FizzBuzz
 Requisitos:
 
 En el archivo:
+
 o composer install.
-o phpunit, para comprobar los test
+
+o phpunit, para comprobar los test.
 
 ----------------------------------------------------------------------------------------------------------------------------
 
